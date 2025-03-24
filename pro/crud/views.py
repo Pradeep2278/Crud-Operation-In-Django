@@ -1,24 +1,3 @@
-# from rest_framework.views import APIView
-# from rest_framework.response import Response
-# from rest_framework import status
-# from .models import pradeep
-# from .serializers import pradeepSerializers
-
-# class Create(APIView):
-
-#     def get(self,request):
-#         result=pradeep.objects.all()
-#         serializer=pradeepSerializers(result,many=True)
-#         return Response(serializer.data)
-    
-#     def post(self,request):
-#         serializer=pradeepSerializers(data=request.data)
-
-#         if serializer.is_valid():
-#             serializer.save()
-#             return Response(serializer.data,status=status.HTTP_201_CREATED)
-#         return Response(serializer.errors,status=status.HTTP_404_NOT_FOUND)
-    
 from django.views.decorators.csrf import csrf_exempt
 from django.shortcuts import render,redirect,get_object_or_404
 from django.http import HttpResponse
